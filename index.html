@@ -2,119 +2,147 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="description"
+        content="Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation">
+  <meta name="keywords" content="ACT, Robotics, Manipulation, Edge Computing, Model Compression">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://aravind-mandiga.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#">
+            Coming Soon
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Aravind Mandiga</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Guoming Li</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Computer Science</span>
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -122,191 +150,315 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="./static/images/teaser.png" alt="Teaser image showing MobileACT and SSMPolicy performance"
+           style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        <span class="dnerf">MobileACT</span> and <span class="dnerf">SSMPolicy</span> achieve ~29× parameter reduction 
+        while maintaining or improving performance on challenging manipulation tasks.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-transfer">
+          <video poster="" id="transfer" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/transfer_cube.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-insertion">
+          <video poster="" id="insertion" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/insertion.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mobileact">
+          <video poster="" id="mobileact" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mobileact_demo.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-ssm">
+          <video poster="" id="ssm" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ssm_demo.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-real">
+          <video poster="" id="real" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/real_world.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            State-of-the-art visuomotor agents such as the Action Chunking Transformer (ACT) enable fine-grained robotic
+            manipulation but still weigh 52 million parameters, limiting deployment on embedded robots.
+          </p>
+          <p>
+            We introduce two drop-in replacements—<strong>MobileACT (1.78M parameters)</strong> and <strong>SSMPolicy (1.45M parameters)</strong>—that 
+            preserve ACT's chunk-prediction paradigm while cutting model size by approximately <strong>29×</strong>.
+          </p>
+          <p>
+            On the ALOHA benchmark, the lightweight models achieve 80% success on Transfer Cube and 38% on the contact-rich Insertion 
+            task, surpassing the 52M-parameter ACT baseline on the latter while maintaining competitive performance on 
+            precise manipulation tasks. Real-world validation on single-arm pick-and-place tasks confirms computational 
+            efficiency gains and practical deployability.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    <!--/ Abstract. -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
+    <!--/ Paper video. -->
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
 
 
+<section class="section">
+  <div class="container is-max-desktop">
 
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Performance Results</h2>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="content has-text-justified">
+          <p>
+            Our lightweight models achieve dramatic parameter reduction while maintaining or improving performance 
+            on challenging manipulation tasks from the ALOHA benchmark.
+          </p>
+        </div>
+
+        <!-- Performance Table -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Policy</th>
+                  <th>Parameters</th>
+                  <th>Transfer Cube (%)</th>
+                  <th>Insertion (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ACT (Original)</td>
+                  <td>52M</td>
+                  <td>83.0</td>
+                  <td>20.6</td>
+                </tr>
+                <tr class="is-selected">
+                  <td><strong>MobileACT</strong></td>
+                  <td><strong>1.78M</strong></td>
+                  <td><strong>80.0</strong></td>
+                  <td><strong>38.0</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>SSMPolicy</strong></td>
+                  <td><strong>1.45M</strong></td>
+                  <td><strong>74.0</strong></td>
+                  <td><strong>14.0</strong></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+
       </div>
     </div>
+    <!--/ Results. -->
+
+    <div class="columns is-centered">
+
+      <!-- MobileACT. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">MobileACT Architecture</h2>
+          <p>
+            Our first lightweight alternative targets aggressive parameter reduction while preserving ACT's fundamental design.
+          </p>
+          <ul>
+            <li><strong>Vision Compression:</strong> MobileNet-V3 Small (0.9M params) replaces ResNet-18 (11.2M params)</li>
+            <li><strong>Transformer Reduction:</strong> 2-layer encoder + 1-layer decoder with 128-D hidden states</li>
+            <li><strong>Parameter Efficiency:</strong> 95% reduction in transformer parameters</li>
+            <li><strong>Total:</strong> 1.78M parameters (29× reduction)</li>
+          </ul>
+        </div>
+      </div>
+      <!--/ MobileACT. -->
+
+      <!-- SSMPolicy. -->
+      <div class="column">
+        <h2 class="title is-3">SSMPolicy Architecture</h2>
+        <div class="content">
+          <p>
+            Our second approach leverages state-space models to achieve even greater efficiency with linear complexity.
+          </p>
+          <ul>
+            <li><strong>State-Space Models:</strong> Mamba-style selective SSM blocks for O(n) complexity</li>
+            <li><strong>Factorized Embeddings:</strong> 4× compression in parameter efficiency</li>
+            <li><strong>Linear Complexity:</strong> Efficient sequence processing vs. O(n²) attention</li>
+            <li><strong>Total:</strong> 1.45M parameters (36× reduction)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ SSMPolicy. -->
+
+    <!-- Architecture Diagrams. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Architecture Overview</h2>
+
+        <!-- MobileACT Diagram. -->
+        <h3 class="title is-4">MobileACT Architecture</h3>
+        <div class="content has-text-justified">
+          <p>
+            MobileACT preserves ACT's core conditional VAE framework while introducing lightweight innovations 
+            for vision processing and sequence modeling.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/mobileact_architecture.png"
+               alt="MobileACT Architecture Diagram"
+               style="width: 100%; max-width: 800px;">
+        </div>
+
+        <!-- SSMPolicy Diagram. -->
+        <h3 class="title is-4">SSMPolicy Architecture</h3>
+        <div class="content has-text-justified">
+          <p>
+            SSMPolicy demonstrates the first application of selective state-space models to chunked action prediction 
+            in robotic manipulation with linear computational complexity.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/ssm_architecture.png"
+               alt="SSMPolicy Architecture Diagram"
+               style="width: 100%; max-width: 800px;">
+        </div>
+
+      </div>
+    </div>
+    <!--/ Architecture Diagrams. -->
+
+    <!-- Real-world Deployment. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Real-World Deployment</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            To validate computational efficiency claims and demonstrate practical deployability beyond simulation, 
+            we conduct experiments on single-arm manipulation tasks using available laboratory hardware.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-4">Edge Hardware Validation</h3>
+              <p>
+                Both models achieve substantial inference speedups on edge hardware, enabling control loops 
+                well above typical manipulation requirements.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-4">Single-Arm Adaptation</h3>
+              <p>
+                Models adapt efficiently to single-arm configuration (7-DoF vs 14-DoF), demonstrating 
+                practical flexibility for diverse deployment scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Real-world Deployment. -->
+
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{mandiga2024lightweight,
+  author    = {Mandiga, Aravind and Li, Guoming},
+  title     = {Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation},
+  journal   = {IEEE Robotics and Automation Letters},
+  year      = {2024},
+}</code></pre>
   </div>
 </section>
-<!-- End video carousel -->
 
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/aravind-mandiga" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
