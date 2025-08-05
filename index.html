@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Lightweight Chunked-Action Policies for resource constrained Robotic Manipulation">
+        content="Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation">
   <meta name="keywords" content="ACT, Robotics, Manipulation, Edge Computing, Model Compression">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lightweight Chunked-Action Policies for Low-Cost Robotic Manipulation</title>
@@ -153,7 +153,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/teaser.png" alt="Teaser image showing MobileACT and SSMPolicy performance"
+      <img src="./files/teaser.png" alt="Teaser image showing MobileACT and SSMPolicy performance"
            style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">MobileACT</span> and <span class="dnerf">SSMPolicy</span> achieve ~29× parameter reduction 
@@ -170,31 +170,13 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-transfer">
           <video poster="" id="transfer" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/transfer_cube.mp4"
+            <source src="./files/mobile_act_transfer_task_video.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-insertion">
           <video poster="" id="insertion" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/insertion.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mobileact">
-          <video poster="" id="mobileact" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mobileact_demo.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-ssm">
-          <video poster="" id="ssm" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/ssm_demo.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-real">
-          <video poster="" id="real" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_world.mp4"
+            <source src="./files/mobile_act_insertion_task_video.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -206,25 +188,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            State-of-the-art visuomotor agents such as the Action Chunking Transformer (ACT) enable fine-grained robotic
-            manipulation but still weigh 52 million parameters, limiting deployment on embedded robots.
-          </p>
-          <p>
-            We introduce two drop-in replacements—<strong>MobileACT (1.78M parameters)</strong> and <strong>SSMPolicy (1.45M parameters)</strong>—that 
-            preserve ACT's chunk-prediction paradigm while cutting model size by approximately <strong>29×</strong>.
-          </p>
-          <p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
@@ -256,7 +219,40 @@
           </p>
         </div>
 
-
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Policy</th>
+                  <th>Parameters</th>
+                  <th>Transfer Cube (%)</th>
+                  <th>Insertion (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ACT (Original)</td>
+                  <td>52M</td>
+                  <td>83.0</td>
+                  <td>20.6</td>
+                </tr>
+                <tr class="is-selected">
+                  <td><strong>MobileACT</strong></td>
+                  <td><strong>1.78M</strong></td>
+                  <td><strong>80.0</strong></td>
+                  <td><strong>38.0</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>SSMPolicy</strong></td>
+                  <td><strong>1.45M</strong></td>
+                  <td><strong>74.0</strong></td>
+                  <td><strong>14.0</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -313,7 +309,7 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/mobileact_architecture.png"
+          <img src="./files/mobile_act_architecture.png"
                alt="MobileACT Architecture Diagram"
                style="width: 100%; max-width: 800px;">
         </div>
@@ -327,7 +323,7 @@
           </p>
         </div>
         <div class="content has-text-centered">
-          <img src="./static/images/ssm_architecture.png"
+          <img src="./files/ssm_policy_architecture.png"
                alt="SSMPolicy Architecture Diagram"
                style="width: 100%; max-width: 800px;">
         </div>
@@ -394,7 +390,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/paper.pdf">
+         href="./files/paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/aravind-mandiga" class="external-link" disabled>
